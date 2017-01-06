@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="RTDEVSQL2000.Rogue"
+  DTS:DTSID="{CB6B8FA6-F056-4BD6-ABC4-B5A59000C687}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=RTDEVSQL2000;Initial Catalog=Rogue;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Integration Services Project1-{CB6B8FA6-F056-4BD6-ABC4-B5A59000C687}RTDEVSQL2000.Rogue;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

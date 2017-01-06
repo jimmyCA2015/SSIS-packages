@@ -1,0 +1,2376 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/8/2015 9:05:59 AM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="MIS-0014"
+  DTS:CreatorName="RST\JLin"
+  DTS:DTSID="{0A77B32B-713E-4C0C-A2F3-A4878C6739AA}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="11.0.5583.0"
+  DTS:LocaleID="4105"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{EC0748D8-90C2-4BB4-9BAC-C9D889C9E170}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{6D0AD1BE-A22C-4179-BFD7-CEEDB4A8C796}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\JLin\Desktop\Broker_Hourly_Pay.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{B281E66E-BC6E-4CE0-B154-1FFEE216ADF8}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\JLin\Desktop\Broker Hourly Pay2.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 10]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{6316B800-43F6-4B44-AAB9-B0A7EF3FC63D}"
+      DTS:ObjectName="Excel Connection Manager 10">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\RTSBS\Analytics\Finance\Hourly vs Tariff\Broker Hourly Pay.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 11]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{F2933767-3B7A-414D-A7D8-A05361B9D154}"
+      DTS:ObjectName="Excel Connection Manager 11">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\JLin\Desktop\wow.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{C401F115-34FA-49CB-A213-73A60F79C8F6}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\JLin\Desktop\update.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{9B24D20C-F36F-45B2-95BF-6DC432F8530C}"
+      DTS:ObjectName="Excel Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\JLin\Desktop\update.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{60F52B6D-9910-4555-AC01-70E555E6F8A7}"
+      DTS:ObjectName="Excel Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\JLin\Desktop\update.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{AB1BD5AD-D412-4B49-9BD5-475AC57D044E}"
+      DTS:ObjectName="Excel Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\JLin\Desktop\update.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 6]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{38E409E2-36FB-4195-8BB8-50147B015736}"
+      DTS:ObjectName="Excel Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\RTSBS\Analytics\Finance\Hourly vs Tariff\Broker Hourly Pay.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 7]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{11F9E49D-938D-40EB-A7C8-AAF3465C8594}"
+      DTS:ObjectName="Excel Connection Manager 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\RTSBS\Analytics\Finance\Hourly vs Tariff\Broker Hourly Pay.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 8]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{C3642898-F6A1-4A28-A3E1-0C5C4D6CB454}"
+      DTS:ObjectName="Excel Connection Manager 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\RTSBS\Analytics\Finance\Hourly vs Tariff\Broker Hourly Pay.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 9]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{C94E1F9A-236C-4DBE-B25B-1254506A6C37}"
+      DTS:ObjectName="Excel Connection Manager 9">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\RTSBS\Analytics\Finance\Hourly vs Tariff\Broker Hourly Pay.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[RTDEVSQL2000.EMWorking]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C38362F7-93AE-4DE7-85C6-015F98E7BA58}"
+      DTS:ObjectName="RTDEVSQL2000.EMWorking">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=RTDEVSQL2000;Initial Catalog=EMWorking;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{C38362F7-93AE-4DE7-85C6-015F98E7BA58}RTDEVSQL2000.EMWorking;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Delete old table content and reset identitly starting row to 1"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{E2EF8E3C-4AF8-42DB-9332-13209A621F80}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Delete old table content and reset identitly starting row to 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C38362F7-93AE-4DE7-85C6-015F98E7BA58}"
+          SQLTask:SqlStatementSource="DELETE FROM TBLDriverPay; DBCC CHECKIDENT('[TBLDriverPay]', RESEED, 0)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Insert  Records"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{33C11C79-5167-4C12-949D-89E022059CFB}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Insert  Records"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Insert  Records\Data Conversion"
+              componentClassID="{62B1106C-7DB8-4EC8-ADD6-4C664DFFC54A}"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Type]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Type"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Type]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Driver]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Driver"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Driver]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Hours]"
+                      cachedDataType="r8"
+                      cachedName="Hours"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Hours]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Hourly Pay]"
+                      cachedDataType="r8"
+                      cachedName="Hourly Pay"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Hourly Pay]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Reefer Hours]"
+                      cachedDataType="r8"
+                      cachedName="Reefer Hours"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Reefer Hours]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Base]"
+                      cachedDataType="r8"
+                      cachedName="Base"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Base]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Commissions]"
+                      cachedDataType="r8"
+                      cachedName="Commissions"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Commissions]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Reefer Surcharge]"
+                      cachedDataType="r8"
+                      cachedName="Reefer Surcharge"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Reefer Surcharge]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Extras]"
+                      cachedDataType="r8"
+                      cachedName="Extras"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Extras]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Extra]"
+                      cachedDataType="r8"
+                      cachedName="Extra"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Extra]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Dock Work]"
+                      cachedDataType="r8"
+                      cachedName="Dock Work"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Dock Work]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Stand-by]"
+                      cachedDataType="r8"
+                      cachedName="Stand-by"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Stand-by]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[BD]"
+                      cachedDataType="r8"
+                      cachedName="BD"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[BD]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Milage]"
+                      cachedDataType="r8"
+                      cachedName="Milage"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Milage]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Pallets]"
+                      cachedDataType="r8"
+                      cachedName="Pallets"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Pallets]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Total]"
+                      cachedDataType="r8"
+                      cachedName="Total"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Total]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Phone]"
+                      cachedDataType="r8"
+                      cachedName="Phone"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Phone]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Fuel]"
+                      cachedDataType="r8"
+                      cachedName="Fuel"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Fuel]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Truck Wash]"
+                      cachedDataType="r8"
+                      cachedName="Truck Wash"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Truck Wash]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Adjustment]"
+                      cachedDataType="r8"
+                      cachedName="Adjustment"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Adjustment]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[OverPaid Hours]"
+                      cachedDataType="r8"
+                      cachedName="OverPaid Hours"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[OverPaid Hours]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[SteriPro Adjustment]"
+                      cachedDataType="r8"
+                      cachedName="SteriPro Adjustment"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[SteriPro Adjustment]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[HST]"
+                      cachedDataType="r8"
+                      cachedName="HST"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[HST]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[Net]"
+                      cachedDataType="r8"
+                      cachedName="Net"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Net]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[NTBase]"
+                      cachedDataType="r8"
+                      cachedName="NTBase"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTBase]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[NTPallets]"
+                      cachedDataType="r8"
+                      cachedName="NTPallets"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTPallets]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[NTDock]"
+                      cachedDataType="r8"
+                      cachedName="NTDock"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTDock]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[NTShunt]"
+                      cachedDataType="r8"
+                      cachedName="NTShunt"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTShunt]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[NTAdjust]"
+                      cachedDataType="r8"
+                      cachedName="NTAdjust"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTAdjust]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[NTSupplement]"
+                      cachedDataType="r8"
+                      cachedName="NTSupplement"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTSupplement]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[NTTotalPay]"
+                      cachedDataType="r8"
+                      cachedName="NTTotalPay"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTTotalPay]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[NTNet]"
+                      cachedDataType="r8"
+                      cachedName="NTNet"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTNet]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input].Columns[EndDate]"
+                      cachedDataType="date"
+                      cachedName="EndDate"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[EndDate]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Type]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Type]"
+                      name="Copy of Type"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Type]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Driver]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Driver]"
+                      name="Copy of Driver"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Driver]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Hours]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Hours]"
+                      name="Copy of Hours"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Hours]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Hourly Pay]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Hourly Pay]"
+                      name="Copy of Hourly Pay"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Hourly Pay]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reefer Hours]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reefer Hours]"
+                      name="Copy of Reefer Hours"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Reefer Hours]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Base]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Base]"
+                      name="Copy of Base"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Base]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Commissions]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Commissions]"
+                      name="Copy of Commissions"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Commissions]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reefer Surcharge]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reefer Surcharge]"
+                      name="Copy of Reefer Surcharge"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Reefer Surcharge]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Extras]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Extras]"
+                      name="Copy of Extras"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Extras]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Extra]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Extra]"
+                      name="Copy of Extra"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Extra]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Dock Work]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Dock Work]"
+                      name="Copy of Dock Work"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Dock Work]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Stand-by]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Stand-by]"
+                      name="Copy of Stand-by"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Stand-by]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of BD]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of BD]"
+                      name="Copy of BD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[BD]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Milage]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Milage]"
+                      name="Copy of Milage"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Milage]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Pallets]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Pallets]"
+                      name="Copy of Pallets"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Pallets]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Total]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Total]"
+                      name="Copy of Total"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Total]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Phone]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Phone]"
+                      name="Copy of Phone"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Phone]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Fuel]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Fuel]"
+                      name="Copy of Fuel"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Fuel]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Truck Wash]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Truck Wash]"
+                      name="Copy of Truck Wash"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Truck Wash]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Adjustment]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Adjustment]"
+                      name="Copy of Adjustment"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Adjustment]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OverPaid Hours]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OverPaid Hours]"
+                      name="Copy of OverPaid Hours"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[OverPaid Hours]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of SteriPro Adjustment]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of SteriPro Adjustment]"
+                      name="Copy of SteriPro Adjustment"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[SteriPro Adjustment]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of HST]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of HST]"
+                      name="Copy of HST"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[HST]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Net]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Net]"
+                      name="Copy of Net"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Net]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTBase]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTBase]"
+                      name="Copy of NTBase"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTBase]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTPallets]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTPallets]"
+                      name="Copy of NTPallets"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTPallets]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTDock]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTDock]"
+                      name="Copy of NTDock"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTDock]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTShunt]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTShunt]"
+                      name="Copy of NTShunt"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTShunt]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTAdjust]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTAdjust]"
+                      name="Copy of NTAdjust"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTAdjust]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTSupplement]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTSupplement]"
+                      name="Copy of NTSupplement"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTSupplement]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTTotalPay]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTTotalPay]"
+                      name="Copy of NTTotalPay"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTTotalPay]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTNet]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTNet]"
+                      name="Copy of NTNet"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTNet]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EndDate]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EndDate]"
+                      name="Copy of EndDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[EndDate]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Insert  Records\Excel Source"
+              componentClassID="{8C084929-27D1-479F-9641-ABB7CDADF1AC}"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet2$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Insert  Records\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 11]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 11]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[EndDate]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[EndDate]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[EndDate]"
+                      name="EndDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Type]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Type]"
+                      length="255"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Type]"
+                      name="Type"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Driver]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Driver]"
+                      length="255"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Driver]"
+                      name="Driver"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Hours]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Hours]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Hours]"
+                      name="Hours"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Hourly Pay]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Hourly Pay]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Hourly Pay]"
+                      name="Hourly Pay"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Reefer Hours]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Reefer Hours]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Reefer Hours]"
+                      name="Reefer Hours"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Base]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Base]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Base]"
+                      name="Base"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Commissions]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Commissions]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Commissions]"
+                      name="Commissions"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Reefer Surcharge]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Reefer Surcharge]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Reefer Surcharge]"
+                      name="Reefer Surcharge"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Extras]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Extras]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Extras]"
+                      name="Extras"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Extra]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Extra]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Extra]"
+                      name="Extra"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Dock Work]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Dock Work]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Dock Work]"
+                      name="Dock Work"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Stand-by]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Stand-by]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Stand-by]"
+                      name="Stand-by"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[BD]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[BD]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[BD]"
+                      name="BD"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Milage]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Milage]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Milage]"
+                      name="Milage"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Pallets]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Pallets]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Pallets]"
+                      name="Pallets"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Total]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Total]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Total]"
+                      name="Total"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Phone]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Phone]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Phone]"
+                      name="Phone"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Fuel]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Fuel]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Fuel]"
+                      name="Fuel"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Truck Wash]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Truck Wash]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Truck Wash]"
+                      name="Truck Wash"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Adjustment]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Adjustment]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Adjustment]"
+                      name="Adjustment"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[OverPaid Hours]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[OverPaid Hours]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[OverPaid Hours]"
+                      name="OverPaid Hours"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[SteriPro Adjustment]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[SteriPro Adjustment]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[SteriPro Adjustment]"
+                      name="SteriPro Adjustment"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[HST]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[HST]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[HST]"
+                      name="HST"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Net]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Net]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[Net]"
+                      name="Net"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTBase]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTBase]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTBase]"
+                      name="NTBase"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTPallets]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTPallets]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTPallets]"
+                      name="NTPallets"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTDock]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTDock]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTDock]"
+                      name="NTDock"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTShunt]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTShunt]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTShunt]"
+                      name="NTShunt"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTAdjust]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTAdjust]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTAdjust]"
+                      name="NTAdjust"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTSupplement]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTSupplement]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTSupplement]"
+                      name="NTSupplement"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTTotalPay]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTTotalPay]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTTotalPay]"
+                      name="NTTotalPay"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTNet]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTNet]"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].Columns[NTNet]"
+                      name="NTNet"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[EndDate]"
+                      dataType="date"
+                      name="EndDate" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Type]"
+                      dataType="wstr"
+                      length="255"
+                      name="Type" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Driver]"
+                      dataType="wstr"
+                      length="255"
+                      name="Driver" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Hours]"
+                      dataType="r8"
+                      name="Hours" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Hourly Pay]"
+                      dataType="r8"
+                      name="Hourly Pay" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Reefer Hours]"
+                      dataType="r8"
+                      name="Reefer Hours" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Base]"
+                      dataType="r8"
+                      name="Base" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Commissions]"
+                      dataType="r8"
+                      name="Commissions" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Reefer Surcharge]"
+                      dataType="r8"
+                      name="Reefer Surcharge" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Extras]"
+                      dataType="r8"
+                      name="Extras" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Extra]"
+                      dataType="r8"
+                      name="Extra" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Dock Work]"
+                      dataType="r8"
+                      name="Dock Work" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Stand-by]"
+                      dataType="r8"
+                      name="Stand-by" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[BD]"
+                      dataType="r8"
+                      name="BD" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Milage]"
+                      dataType="r8"
+                      name="Milage" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Pallets]"
+                      dataType="r8"
+                      name="Pallets" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Total]"
+                      dataType="r8"
+                      name="Total" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Phone]"
+                      dataType="r8"
+                      name="Phone" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Fuel]"
+                      dataType="r8"
+                      name="Fuel" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Truck Wash]"
+                      dataType="r8"
+                      name="Truck Wash" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Adjustment]"
+                      dataType="r8"
+                      name="Adjustment" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[OverPaid Hours]"
+                      dataType="r8"
+                      name="OverPaid Hours" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[SteriPro Adjustment]"
+                      dataType="r8"
+                      name="SteriPro Adjustment" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[HST]"
+                      dataType="r8"
+                      name="HST" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[Net]"
+                      dataType="r8"
+                      name="Net" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTBase]"
+                      dataType="r8"
+                      name="NTBase" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTPallets]"
+                      dataType="r8"
+                      name="NTPallets" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTDock]"
+                      dataType="r8"
+                      name="NTDock" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTShunt]"
+                      dataType="r8"
+                      name="NTShunt" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTAdjust]"
+                      dataType="r8"
+                      name="NTAdjust" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTSupplement]"
+                      dataType="r8"
+                      name="NTSupplement" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTTotalPay]"
+                      dataType="r8"
+                      name="NTTotalPay" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output].ExternalColumns[NTNet]"
+                      dataType="r8"
+                      name="NTNet" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[EndDate]"
+                      dataType="date"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[EndDate]"
+                      name="EndDate" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Type]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Type]"
+                      name="Type" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Driver]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Driver]"
+                      name="Driver" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Hours]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Hours]"
+                      name="Hours" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Hourly Pay]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Hourly Pay]"
+                      name="Hourly Pay" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Reefer Hours]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Reefer Hours]"
+                      name="Reefer Hours" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Base]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Base]"
+                      name="Base" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Commissions]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Commissions]"
+                      name="Commissions" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Reefer Surcharge]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Reefer Surcharge]"
+                      name="Reefer Surcharge" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Extras]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Extras]"
+                      name="Extras" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Extra]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Extra]"
+                      name="Extra" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Dock Work]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Dock Work]"
+                      name="Dock Work" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Stand-by]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Stand-by]"
+                      name="Stand-by" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[BD]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[BD]"
+                      name="BD" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Milage]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Milage]"
+                      name="Milage" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Pallets]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Pallets]"
+                      name="Pallets" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Total]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Total]"
+                      name="Total" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Phone]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Phone]"
+                      name="Phone" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Fuel]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Fuel]"
+                      name="Fuel" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Truck Wash]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Truck Wash]"
+                      name="Truck Wash" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Adjustment]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Adjustment]"
+                      name="Adjustment" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[OverPaid Hours]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[OverPaid Hours]"
+                      name="OverPaid Hours" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[SteriPro Adjustment]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[SteriPro Adjustment]"
+                      name="SteriPro Adjustment" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[HST]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[HST]"
+                      name="HST" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Net]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[Net]"
+                      name="Net" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTBase]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTBase]"
+                      name="NTBase" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTPallets]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTPallets]"
+                      name="NTPallets" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTDock]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTDock]"
+                      name="NTDock" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTShunt]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTShunt]"
+                      name="NTShunt" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTAdjust]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTAdjust]"
+                      name="NTAdjust" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTSupplement]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTSupplement]"
+                      name="NTSupplement" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTTotalPay]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTTotalPay]"
+                      name="NTTotalPay" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTNet]"
+                      dataType="r8"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[NTNet]"
+                      name="NTNet" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Insert  Records\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Insert  Records\OLE DB Destination"
+              componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[TBLDriverPay]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Insert  Records\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[RTDEVSQL2000.EMWorking]"
+                  connectionManagerRefId="Package.ConnectionManagers[RTDEVSQL2000.EMWorking]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of EndDate]"
+                      cachedDataType="date"
+                      cachedName="Copy of EndDate"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EndDate]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of EndDate]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of Type"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Type]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Hours]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Hours"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hours]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Hours]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Hourly Pay]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Hourly Pay"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HourlyPay]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Hourly Pay]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Reefer Hours]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Reefer Hours"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReeferHours]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reefer Hours]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Base]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Base"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Base]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Base]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Commissions]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Commissions"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Commissions]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Commissions]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Reefer Surcharge]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Reefer Surcharge"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReeferSurcharge]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Reefer Surcharge]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Driver]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="Copy of Driver"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Driver]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Driver]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Extras]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Extras"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Extras]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Extras]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Extra]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Extra"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Extra]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Extra]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Dock Work]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Dock Work"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DockWork]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Dock Work]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Stand-by]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Stand-by"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Stand_by]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Stand-by]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of BD]"
+                      cachedDataType="cy"
+                      cachedName="Copy of BD"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BD]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of BD]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Milage]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Milage"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Milage]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Milage]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Pallets]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Pallets"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Pallets]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Pallets]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Total]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Total"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Total]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Phone]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Phone"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Phone]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Fuel]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Fuel"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Fuel]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Fuel]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Truck Wash]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Truck Wash"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TruckWash]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Truck Wash]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Adjustment]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Adjustment"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Adjustment]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Adjustment]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of OverPaid Hours]"
+                      cachedDataType="cy"
+                      cachedName="Copy of OverPaid Hours"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OverPaidHours]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of OverPaid Hours]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of SteriPro Adjustment]"
+                      cachedDataType="cy"
+                      cachedName="Copy of SteriPro Adjustment"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SteriProAdjustment]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of SteriPro Adjustment]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of HST]"
+                      cachedDataType="cy"
+                      cachedName="Copy of HST"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HST]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of HST]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of Net]"
+                      cachedDataType="cy"
+                      cachedName="Copy of Net"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Net]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Net]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of NTBase]"
+                      cachedDataType="cy"
+                      cachedName="Copy of NTBase"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTBase]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTBase]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of NTPallets]"
+                      cachedDataType="cy"
+                      cachedName="Copy of NTPallets"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTPallets]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTPallets]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of NTDock]"
+                      cachedDataType="cy"
+                      cachedName="Copy of NTDock"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTDock]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTDock]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of NTShunt]"
+                      cachedDataType="cy"
+                      cachedName="Copy of NTShunt"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTShunt]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTShunt]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of NTAdjust]"
+                      cachedDataType="cy"
+                      cachedName="Copy of NTAdjust"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTAdjust]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTAdjust]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of NTSupplement]"
+                      cachedDataType="cy"
+                      cachedName="Copy of NTSupplement"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTSupplement]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTSupplement]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of NTTotalPay]"
+                      cachedDataType="cy"
+                      cachedName="Copy of NTTotalPay"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTTotalPay]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTTotalPay]" />
+                    <inputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of NTNet]"
+                      cachedDataType="cy"
+                      cachedName="Copy of NTNet"
+                      externalMetadataColumnId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTNet]"
+                      lineageId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of NTNet]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EndDate]"
+                      dataType="dbTimeStamp"
+                      name="EndDate" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Type" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Driver]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="Driver" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Hours]"
+                      dataType="cy"
+                      name="Hours" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HourlyPay]"
+                      dataType="cy"
+                      name="HourlyPay" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReeferHours]"
+                      dataType="cy"
+                      name="ReeferHours" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Base]"
+                      dataType="cy"
+                      name="Base" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Commissions]"
+                      dataType="cy"
+                      name="Commissions" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReeferSurcharge]"
+                      dataType="cy"
+                      name="ReeferSurcharge" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Extras]"
+                      dataType="cy"
+                      name="Extras" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Extra]"
+                      dataType="cy"
+                      name="Extra" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DockWork]"
+                      dataType="cy"
+                      name="DockWork" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Stand_by]"
+                      dataType="cy"
+                      name="Stand_by" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BD]"
+                      dataType="cy"
+                      name="BD" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Milage]"
+                      dataType="cy"
+                      name="Milage" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Pallets]"
+                      dataType="cy"
+                      name="Pallets" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total]"
+                      dataType="cy"
+                      name="Total" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phone]"
+                      dataType="cy"
+                      name="Phone" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Fuel]"
+                      dataType="cy"
+                      name="Fuel" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TruckWash]"
+                      dataType="cy"
+                      name="TruckWash" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Adjustment]"
+                      dataType="cy"
+                      name="Adjustment" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OverPaidHours]"
+                      dataType="cy"
+                      name="OverPaidHours" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SteriProAdjustment]"
+                      dataType="cy"
+                      name="SteriProAdjustment" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[HST]"
+                      dataType="cy"
+                      name="HST" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Net]"
+                      dataType="cy"
+                      name="Net" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTBase]"
+                      dataType="cy"
+                      name="NTBase" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTPallets]"
+                      dataType="cy"
+                      name="NTPallets" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTDock]"
+                      dataType="cy"
+                      name="NTDock" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTShunt]"
+                      dataType="cy"
+                      name="NTShunt" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTAdjust]"
+                      dataType="cy"
+                      name="NTAdjust" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTSupplement]"
+                      dataType="cy"
+                      name="NTSupplement" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTTotalPay]"
+                      dataType="cy"
+                      name="NTTotalPay" />
+                    <externalMetadataColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NTNet]"
+                      dataType="cy"
+                      name="NTNet" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Insert  Records\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Insert  Records\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Insert  Records\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Insert  Records\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Insert  Records.Paths[Data Conversion Output]"
+              endId="Package\Insert  Records\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Insert  Records\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Insert  Records.Paths[Excel Source Output]"
+              endId="Package\Insert  Records\Data Conversion.Inputs[Data Conversion Input]"
+              name="Excel Source Output"
+              startId="Package\Insert  Records\Excel Source.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{C7E92306-630B-4167-A659-ED94B506743B}"
+      DTS:From="Package\Delete old table content and reset identitly starting row to 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Insert  Records" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="363,42"
+          Id="Package\Delete old table content and reset identitly starting row to 1"
+          TopLeft="572,142" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Insert  Records"
+          TopLeft="488,258" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="753.5,184">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-189,74"
+              Start="0,0"
+              End="-189,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33"
+                    Point2="0,37"
+                    Point3="-4,37" />
+                  <mssgle:LineSegment
+                    End="-185,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-185,37"
+                    Point2="-189,37"
+                    Point3="-189,41" />
+                  <mssgle:LineSegment
+                    End="-189,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Insert  Records">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Insert  Records\Excel Source"
+          TopLeft="513,105" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Insert  Records\Data Conversion"
+          TopLeft="516,282" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Insert  Records\OLE DB Destination"
+          TopLeft="508,440" />
+        <EdgeLayout
+          Id="Package\Insert  Records.Paths[Data Conversion Output]"
+          TopLeft="594.75,324">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,116"
+              Start="0,0"
+              End="0,108.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,108.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Insert  Records.Paths[Excel Source Output]"
+          TopLeft="583.5,147">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="11.5,135"
+              Start="0,0"
+              End="11.5,127.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,63.5"
+                    Point2="0,67.5"
+                    Point3="4,67.5" />
+                  <mssgle:LineSegment
+                    End="7.5,67.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.5,67.5"
+                    Point2="11.5,67.5"
+                    Point3="11.5,71.5" />
+                  <mssgle:LineSegment
+                    End="11.5,127.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Insert  Records\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Insert  Records\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

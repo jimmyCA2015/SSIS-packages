@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="MIS-0014_SQLEXPRESS.jimmytest"
+  DTS:DTSID="{052579B7-BAB5-4FB6-A105-99CAF9197CC8}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=RTDEVSQL2000;Initial Catalog=EMWorking;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-{052579B7-BAB5-4FB6-A105-99CAF9197CC8}MIS-0014_SQLEXPRESS.jimmytest;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
